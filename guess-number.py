@@ -1,22 +1,16 @@
 import time
-initial = 46
-
-
-def numbers():
-    number = int(input('Enter number to guess: '))
-    if number < initial:
-        print('Number is less than ...')
-    elif number > initial:
-        print('Number is more than ...')
-    else:
-        print('Congratulations, you win!')
+initial = 67
+print('Mini "Guess the number" game, Enter "0" to exit program')
+number = int(input('Enter number to guess: '))
+while number != initial:
+    if number > initial and number != 0:
+        print('The number is greater than initial, try again ...')
+        number = int(input('Enter number to guess: '))
+    elif number < initial and number != 0:
+        print('The number is less than initial, try again ... ')
+        number = int(input('Enter number to guess: '))
+    elif number == 0:
         exit()
-
-
-numbers()
-time.sleep(0.5)
-reset = input('Enter yes to try again, or no to exit: ')
-while reset == 'yes':
-    numbers()
-time.sleep(0.7)
-exit()
+else:
+    print('Congratulations, You Won!')
+    exit()
