@@ -1,7 +1,7 @@
 import random
 import time
-initial = random.randrange(30)
-print('Mini "Guess the number" game, Enter "0" to exit program')
+initial = random.randrange(50)
+print('Mini "Guess the number" game, numbers between 1 - 50, Enter "0" to exit program')
 number = int(input('Enter number to guess: '))
 while number != initial:
     if number > initial and number != 0:
