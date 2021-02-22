@@ -1,5 +1,5 @@
 import time
-initial = int(input('Enter Initial number'))
+initial = int(input('Enter Initial number: '))
 print('Mini "Guess the number" game, Enter "0" to exit program')
 number = int(input('Enter number to guess: '))
 while number != initial:
