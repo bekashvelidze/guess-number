@@ -1,4 +1,5 @@
-initial = 67
+import time
+initial = int(input('Enter Initial number'))
 print('Mini "Guess the number" game, Enter "0" to exit program')
 number = int(input('Enter number to guess: '))
 while number != initial:
@@ -12,4 +13,5 @@ while number != initial:
         exit()
 else:
     print('Congratulations, You Won!')
+    time.sleep(1)
     exit()
